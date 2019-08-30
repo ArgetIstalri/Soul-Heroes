@@ -6,7 +6,7 @@ function init(hero) {
     hero.setLeggings("item.superhero_armor.piece.leggings");
     hero.setBoots("item.superhero_armor.piece.boots");
     hero.addEquipment("fiskheroes:grappling_gun");
-    hero.addAbilities("fiskheroes:utility_belt", "enhanced_reflexes", "fiskheroes:gliding");
+    hero.addAbilities("fiskheroes:utility_belt", "fiskheroes:enhanced_reflexes", "fiskheroes:gliding");
     hero.addAttribute("ATTACK_DAMAGE", 0.60, 1);
     hero.addAttribute("FALL_RESISTANCE", 8.5, 0);
     hero.addAttribute("JUMP_HEIGHT", 1.5, 0);
