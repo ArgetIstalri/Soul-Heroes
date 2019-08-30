@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:joker_killing_joke_layer1",
+    "layer2": "pack:joker_killing_joke_layer2"
+  }
+}

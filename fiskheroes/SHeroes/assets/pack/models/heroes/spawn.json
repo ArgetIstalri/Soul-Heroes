@@ -1,0 +1,32 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:spawn_layer1",
+    "layer2": "pack:spawn_layer2",
+    "cape": "pack:spawn_cape"
+  },
+  "texture": {
+    "renderLayer": {
+      "HELMET": "layer2",
+      "LEGGINGS": "layer2"
+    },
+    "default": "layer1"
+  },
+  "showModel": {
+    "head": ["HELMET", "CHESTPLATE"],
+    "headwear": ["HELMET", "CHESTPLATE"],
+    "body": ["CHESTPLATE", "LEGGINGS"],
+    "rightArm": ["CHESTPLATE"],
+    "leftArm": ["CHESTPLATE"],
+    "rightLeg": ["LEGGINGS", "BOOTS"],
+    "leftLeg": ["LEGGINGS", "BOOTS"]
+  },
+  "fixHatLayer": ["HELMET", "CHESTPLATE"],
+  "custom": {
+    "fiskheroes:cape": {
+      "applicable": ["CHESTPLATE"],
+      "texture": "cape",
+      "length": 26
+    }
+  }
+}

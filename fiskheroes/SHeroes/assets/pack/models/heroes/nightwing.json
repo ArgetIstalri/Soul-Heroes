@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:nightwing_layer1",
+    "layer2": "pack:nightwing_layer2"
+  }
+}

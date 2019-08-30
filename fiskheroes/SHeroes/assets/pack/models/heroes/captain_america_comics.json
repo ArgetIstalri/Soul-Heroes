@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:captain_america_comics_layer1",
+    "layer2": "pack:captain_america_comics_layer2"
+  }
+}

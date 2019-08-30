@@ -1,0 +1,15 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:captain_america_sam_wilson_layer1",
+    "layer2": "pack:captain_america_sam_wilson_layer2",
+    "wings": "fiskheroes:falcon_wings"
+  },
+  "custom": {
+    "fiskheroes:wings": {
+      "applicable": ["CHESTPLATE"],
+      "texture": "wings",
+      "data": "fiskheroes:wing_animation_timer"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "parent": "fiskheroes:hero_speedster",
+  "resources": {
+    "layer1": "pack:supergirl_layer1",
+    "layer2": "pack:supergirl_layer2",
+    "cape": "pack:supergirl_cape"
+  },
+  "texture": {
+    "renderLayer": {
+      "HELMET": "layer2",
+      "LEGGINGS": "layer2"
+    },
+    "default": "layer1"
+  },
+  "showModel": {
+    "head": ["HELMET", "CHESTPLATE"],
+    "headwear": ["HELMET", "CHESTPLATE"],
+    "body": ["CHESTPLATE", "LEGGINGS"],
+    "rightArm": ["CHESTPLATE"],
+    "leftArm": ["CHESTPLATE"],
+    "rightLeg": ["LEGGINGS", "BOOTS"],
+    "leftLeg": ["LEGGINGS", "BOOTS"]
+  },
+  "fixHatLayer": ["HELMET", "CHESTPLATE"],
+  "custom": {
+    "fiskheroes:cape": {
+      "applicable": ["CHESTPLATE"],
+      "texture": "cape",
+      "length": 24
+    },
+    "fiskheroes:heat_vision": {
+      "color": 0xFF0000
+    },
+    "fiskheroes:trail": {
+      "type": "pack:superman",
+      "conditionals": ["vars:SPEEDING"]
+    },
+    "fiskheroes:chest": {
+      "applicable": ["CHESTPLATE"],
+      "extrude": 0.95,
+      "offset": 1
+    }
+  }
+}

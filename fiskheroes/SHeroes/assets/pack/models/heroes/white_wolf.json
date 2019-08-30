@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:white_wolf_layer1",
+    "layer2": "pack:white_wolf_layer2"
+  }
+}

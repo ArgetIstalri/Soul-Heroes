@@ -1,0 +1,39 @@
+{
+  "name": "Soul Heroes",
+  "alts": {
+    "pack:captain_america_mcu": {
+      "bucky_barnes": "Bucky Barnes",
+      "civil_war": "Civil War",
+      "secret_empire": "Secret Empire"
+    },
+    "pack:superman": {
+      "man_of_steel": "Man Of Steel",
+      "injustice": "Injustice",
+      "black": "Black",
+      "godfall": "Godfall"
+    },
+    "pack:lex_luthor": {
+      "injustice": "Injustice"
+    },
+    "pack:batman": {
+      "arkham_city": "Arkham City",
+      "arkham_knight": "Arkham Knight",
+      "dark_knight_returns": "Dark Knight Returns",
+      "new52": "New 52"
+    },
+    "pack:joker": {
+      "jack_nicholson": "Jack Nicholson",
+      "origins": "Origins",
+      "killing_joke": "The Killing Joke"
+    },
+    "pack:robin": {
+      "arkham_knight": "Arkham Knight"
+    },
+    "pack:hawkeye": {
+      "civil_war": "Civil War"
+    },
+    "pack:superboy": {
+      "new52": "New 52"
+    }
+  }
+}

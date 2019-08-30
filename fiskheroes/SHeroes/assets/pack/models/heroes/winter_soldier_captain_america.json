@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:winter_soldier_captain_america_layer1",
+    "layer2": "pack:winter_soldier_captain_america_layer2"
+  }
+}

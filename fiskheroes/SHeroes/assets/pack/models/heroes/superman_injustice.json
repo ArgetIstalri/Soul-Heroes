@@ -1,0 +1,32 @@
+{
+  "parent": "fiskheroes:hero_speedster",
+  "resources": {
+    "layer1": "pack:superman_injustice_layer1",
+    "layer2": "pack:superman_injustice_layer2",
+    "cape": "pack:superman_injustice_cape"
+  },
+  "showModel": {
+    "head": ["CHESTPLATE"],
+    "headwear": ["CHESTPLATE"],
+    "body": ["CHESTPLATE", "LEGGINGS"],
+    "rightArm": ["CHESTPLATE"],
+    "leftArm": ["CHESTPLATE"],
+    "rightLeg": ["LEGGINGS", "BOOTS"],
+    "leftLeg": ["LEGGINGS", "BOOTS"]
+  },
+  "fixHatLayer": ["CHESTPLATE"],
+  "custom": {
+    "fiskheroes:cape": {
+      "applicable": ["CHESTPLATE"],
+      "texture": "cape",
+      "length": 26
+    },
+    "fiskheroes:trail": {
+      "type": "pack:superman",
+      "conditionals": ["vars:SPEEDING"]
+    },
+    "fiskheroes:heat_vision": {
+      "color": 0xFF0000
+    }
+  }
+}

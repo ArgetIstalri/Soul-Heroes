@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:ant_man_scott_lang_layer1",
+    "layer2": "pack:ant_man_scott_lang_layer2"
+  }
+}
