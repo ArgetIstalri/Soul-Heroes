@@ -196,9 +196,57 @@ function canAim(entity) {
     return entity.getHeldItem().isEmpty();
 }
 ```
+For more documentation on this, and useful methods you can refer to the methods Fisk created here https://docs.google.com/document/d/1SV4r6HRG3iRClVJbk88_LmoTwWsM11yu-0BJHChkCzI/edit#
+
 Now, if you use that exact class you'll have one untextured masterpiece of Stan Lee, continue through the tutorial to figure out how to texture and apply the models to him.
 ### Creating Hero Textures
+Hero textures come in a few forms. First, you need to find a proper skin to use. The general requirements is that it supports 1.8.9+ Layer models. (64x64 file) For our model textures we're going to use the skin made by Jaxman on PMC. https://www.planetminecraft.com/skin/stan-lee-4297176/ He makes most of our skins and is very talented.
+
+Whenever you're adding a skin to your pack. Make sure you have permission! If you don't you're essentially stealing and reuploading work by someone else.
+
+You're going to want to save this file to /assets/"YourPackName"/textures/heroes/stan_lee_layer1.png
+Every skin has two parts to it, when you download it you'll get it one. However, you need to open it up into paint.net and separate it. First, you're going to assign the Chestplate and Helmet model textures, so open the file you just downloaded and create a new png that's also the size of 64x64, this will serve as your leggings and boots. Now, you're going to want to extract the 48x16 on the left side 16 pixels down, and then paste that onto your second image file. Next, you're going to extract 16x16 on the bottom of the file 16 pixels right of where you just copied.
+
+Here's an image to help you. https://i.imgur.com/zTmmv04.png
+
+Now that you have two images they should look like this:
+
+Save the first one as stan_lee_layer1.png and the second to stan_lee_layer2.png
+(Or your hero name_layer1&2)
+
+Now you're going to create the item textures. These are important as they're the actual items the player holds in-game. They don't need a ton of texture, but they have to have some complexity to them.
+
 
 ### Creating Models
+Hero models are very important, but they can be very simple to add, and they can be one of the most annoying things to add. Some suits need extra things like capes, masks, and more which can clutter up your model class. An example of a basic hero model with no special features is here:
 
+basic.json
+```markdown
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:basic_layer1",
+    "layer2": "pack:basic_layer"
+  }
+}
+```
 ### Creating Suit Alts
+Suit alts are easy to add, but they take time due to having to make all the separate textures for them. However, they're rewarding in the end.
+
+Declaring the altid and name in your heropack.json
+```markdown
+{
+  "name": "Stan Lee Adventure Pack",
+  "alts": {
+    // I usually use "pack" as my pack id as it's easy to remember and simple.
+    "pack:stan_lee": {
+      "classic": {
+        "name": "Classic"
+      }
+    }
+  }
+}
+```
+For this tutorial section we're going to use another Stan Lee skin made by Kill3rCreeper this time. https://www.planetminecraft.com/skin/stan-lee-3154027/
+
+We'll call this version "classic" this id will be used for our textures and models.
