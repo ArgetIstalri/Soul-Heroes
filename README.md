@@ -209,14 +209,30 @@ Every skin has two parts to it, when you download it you'll get it one. However,
 
 Here's an image to help you. https://i.imgur.com/zTmmv04.png
 
+https://i.imgur.com/wUs0Hvd.png - Starting image
 Now that you have two images they should look like this:
-
+https://i.imgur.com/CDF3QQF.png - stan_lee_layer1.png
+https://i.imgur.com/frqx29u.png - stan_lee_layer2.png
 Save the first one as stan_lee_layer1.png and the second to stan_lee_layer2.png
 (Or your hero name_layer1&2)
 
 Now you're going to create the item textures. These are important as they're the actual items the player holds in-game. They don't need a ton of texture, but they have to have some complexity to them.
 
-
+Helmet Texturing
+For helmets, you can usually just take the head texture from the skin directory. Or, you could make your own like this one.
+https://i.imgur.com/9oZFcb9.png - stan_lee_0.png
+Chestplate Texturing
+For chestplates, you can follow the base images made by Fisk for chestplates.
+https://i.imgur.com/UEFS0CA.png - Template Normal
+https://i.imgur.com/ewPYWZs.png - Template Bulky
+https://i.imgur.com/WqbAtXK.png - Template Female
+https://i.imgur.com/yM1shmg.png - stan_lee_1.png
+Usually, it's best to have the skin on on standby for using it for texturing. Also, before saving add some noise for extra texturing.
+Leggings Texturing
+https://i.imgur.com/FMUGHsj.png - Template Normal
+https://i.imgur.com/mtMZInd.png - stan_lee_2.png
+Boots Texturing
+https://i.imgur.com/Ow5tHtO.png - stan_lee_3.png
 ### Creating Models
 Hero models are very important, but they can be very simple to add, and they can be one of the most annoying things to add. Some suits need extra things like capes, masks, and more which can clutter up your model class. An example of a basic hero model with no special features is here:
 
