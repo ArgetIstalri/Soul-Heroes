@@ -8,7 +8,7 @@ Atom (Full markdown Editor with support for all languages) - https://atom.io/
 
 Notepad++ (Source code Editor to replace Notepad) - https://notepad-plus-plus.org/
 
-We also suggest that you get some sort of photo editor other than MS Paint, there's plenty of free options out there, but if you'd like you could use some high end like Adobe Photoshop
+We also suggest that you get some sort of photo editor other than MS Paint, there's plenty of free options out there, but if you'd like you could use some high end like Adobe Photoshop.
 
 Suggested Photo Editors:
 
@@ -17,15 +17,15 @@ Paint.net (Image and photo editing software for Windows) - https://www.getpaint.
 Gimp (Image Manipulator) - https://www.gimp.org/
 ### Getting Started
 
-The first thing you'll need for your heropack is a name. You can change this later, so it's not a big deal.
+The first thing you'll need for your hero pack is a name. You can change this later, so it's not a big deal.
 
-To start create a class called heropack.json and put in the following information. You can set the "My First Hero Pack" to the name of your choice, and you don't need to add the "alts" section if you do not want Alts.
+To start, create a class called heropack.json and put in the following information. You can set the "My First Hero Pack" to the name of your choice, and you don't need to add the "alts" section if you do not want Alts.
 (If you don't add the alts section make sure to remove the ',' after the name.)
 
 heropack.json
 ```markdown
 {
-  // You can leave comments in these files if you'd like. Just use a // so it's ignored during runtime.
+  // You can leave comments in these files if you'd like. Just use a //, so it's ignored during runtime.
   "name": "My First Hero Pack",
   // You can leave this blank or remove it entirely if you don't plan on adding in any suit alts.
   "alts": {
@@ -35,7 +35,7 @@ heropack.json
 
 Afterword zip the directory and put it in your /fiskheroes/ directory. Then, run /fiskheroes reload
 
-If you come across an issue check your game console for more information. Also, it's a good practice to make sure all of your JSON and JS files are valid.
+If you come across an issue, check your game console for more information. Also, it's a good practice to make sure all of your JSON and JS files are valid.
 
 You can use any checker you'd like. We suggest https://jsonformatter.org/json-parser
 
@@ -55,9 +55,9 @@ credits.txt
 Or, if you'd rather download a template like this one...
 
 ### Adding a Hero
-Before creating a hero ask yourself this...
+Before creating a hero, ask yourself this...
 
-Is it new? Is it unique to other suits. Should it be an alt? 
+Is it new? Is it unique to other suits? Should it be an alt? 
 If you answered no, no, and yes make it a suit alt.
 
 Anyway, making a hero can be quite simple or quite complex depending on what you'd like the hero to be able to do.
@@ -158,13 +158,13 @@ function init(hero) {
     hero.setHasPermission(hasPermission);
 }
 
-// Due to him being amazing, we're going to give Stan Lee all the permissions we can. Our pack has two custom permissions "USE_GUNS" and "USE_MAGIC" which allow the user to use those respective items with their suits.
+// Due to him being amazing, we're going to give Stan Lee all the permissions we can. Our pack has two custom permissions "USE_GUNS" and "USE_MAGIC" which allow the user to use those particular items with their suits.
 
 function hasPermission(entity, permission) {
     return permission == "USE_GRAPPLING_GUN" || permission == "USE_GUNS" || permission == "USE_MAGIC" || permission == "THROW_SHIELD" || permission == "USE_SHIELD" || permission == "USE_COLD_GUN" || permission == "USE_HEAT_GUN" || permission == "USE_RIPS_GUN" || permission == "USE_CHRONOS_RIFLE";
 }
 
-// This is a more complex example of a function, however, you could essentially return the values you want true.
+// This is a more complex example of a function; however, you could essentially return the values you want true.
 function godTier(entity, property) {
     switch (property) {
     // This will allow the user to toggle their mask, or in our case "hair"
@@ -198,20 +198,20 @@ function canAim(entity) {
 ```
 For more documentation on this, and useful methods you can refer to the methods Fisk created here https://docs.google.com/document/d/1SV4r6HRG3iRClVJbk88_LmoTwWsM11yu-0BJHChkCzI/edit#
 
-Now, if you use that exact class you'll have one untextured masterpiece of Stan Lee, continue through the tutorial to figure out how to texture and apply the models to him.
+Now, if you use that exact class, you'll have one untextured masterpiece of Stan Lee, continue through the tutorial to figure out how to texture and apply the models to him.
 ### Creating Hero Textures
-Hero textures come in a few forms. First, you need to find a proper skin to use. The general requirements is that it supports 1.8.9+ Layer models. (64x64 file) For our model textures we're going to use the skin made by Jaxman on PMC. https://www.planetminecraft.com/skin/stan-lee-4297176/ He makes most of our skins and is very talented.
+Hero textures come in a few forms. First, you need to find a proper skin to use. The general requirements are that it supports 1.8.9+ Layer models. (64x64 file) For our model textures, we're going to use the skin made by Jaxman on PMC. https://www.planetminecraft.com/skin/stan-lee-4297176/ He creates most of our skins and is very talented.
 
-Whenever you're adding a skin to your pack. Make sure you have permission! If you don't you're essentially stealing and reuploading work by someone else.
+Whenever you're adding a skin to your pack. Make sure you have permission! If you don't, you're essentially stealing and reuploading work by someone else.
 
 You're going to want to save this file to /assets/"YourPackName"/textures/heroes/stan_lee_layer1.png
-Every skin has two parts to it, when you download it you'll get it one. However, you need to open it up into paint.net and separate it. First, you're going to assign the Chestplate and Helmet model textures, so open the file you just downloaded and create a new png that's also the size of 64x64, this will serve as your leggings and boots. Now, you're going to want to extract the 48x16 on the left side 16 pixels down, and then paste that onto your second image file. Next, you're going to extract 16x16 on the bottom of the file 16 pixels right of where you just copied.
+Every skin has two parts to it, when you download it you'll get it one. However, you need to open it up into paint.net and separate it. First, you're going to assign the Chestplate and Helmet model textures, so open the file you just downloaded and create a new png that's also the size of 64x64, this will serve as your leggings and boots. Now, you're going to want to extract the 48x16 on the left side 16 pixels down, and then paste that onto your second image file. Next, you're going to remove 16x16 on the bottom of the file 16 pixels right of where you just copied.
 
 Here's an image to help you. https://i.imgur.com/zTmmv04.png
 
 https://i.imgur.com/wUs0Hvd.png - Starting image
 
-Now that you have two images they should look like this:
+Now that you have two images, they should look like this:
 
 https://i.imgur.com/CDF3QQF.png - stan_lee_layer1.png
 
@@ -232,7 +232,7 @@ https://i.imgur.com/9oZFcb9.png - stan_lee_0.png
 
 Chestplate Texturing
 
-For chestplates, you can follow the base images made by Fisk for chestplates.
+For chest plates, you can follow the base images made by Fisk for chest plates.
 
 https://i.imgur.com/UEFS0CA.png - Template Normal
 
@@ -242,7 +242,7 @@ https://i.imgur.com/WqbAtXK.png - Template Female
 
 https://i.imgur.com/yM1shmg.png - stan_lee_1.png
 
-Usually, it's best to have the skin on on standby for using it for texturing. Also, before saving add some noise for extra texturing.
+Usually, it's best to have the skin on standby for using it for texturing. Also, before saving add some noise for extra texturing.
 
 Leggings Texturing
 
@@ -254,7 +254,7 @@ Boots Texturing
 
 https://i.imgur.com/Ow5tHtO.png - stan_lee_3.png
 ### Creating Models
-Hero models are very important, but they can be very simple to add, and they can be one of the most annoying things to add. Some suits need extra things like capes, masks, and more which can clutter up your model class. An example of a basic hero model with no special features is here:
+Hero models are critical, but they can be effortless to add, and they can be one of the most annoying things to add. Some suits need extra things like capes, masks, and more, which can clutter up your model class. An example of a basic hero model with no special features is here:
 
 basic.json
 ```markdown
