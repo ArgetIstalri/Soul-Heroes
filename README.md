@@ -266,6 +266,88 @@ basic.json
   }
 }
 ```
+Even though Stan Lee doesn't traditionally have all this stuff, we're going to add as much as we can to him as possible. For uhh, tutorial purposes.
+
+Adding a Cape
+```markdown
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:stan_lee_layer1",
+    "layer2": "pack:stan_lee_layer2",
+    "cape": "pack:stan_lee_cape"
+  },
+  "custom": {
+    "fiskheroes:cape": {
+      "applicable": ["CHESTPLATE"],
+      "texture": "cape",
+      "length": 24
+    }
+  }
+}
+```
+You'll need to create and save a cape to the same place where you saved your armor model textures as the name stan_lee_cape.png
+
+Adding a trail
+```markdown
+{
+  "parent": "fiskheroes:hero_speedster",
+  "resources": {
+    "layer1": "pack:stan_lee_layer1",
+    "layer2": "pack:stan_lee_layer2"
+  },
+  "custom": {
+    "fiskheroes:trail": {
+      "type": "fiskheroes:lightning_gold",
+      "conditionals": ["vars:SPEEDING"]
+    },
+    "fiskheroes:chest": {
+      "applicable": ["CHESTPLATE"],
+      "offset": 2.25
+    }
+  }
+}
+```
+Adding an extrusion
+```markdown
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:stan_lee_layer1",
+    "layer2": "pack:stan_lee_layer2",
+    "cape": "pack:stan_lee_cape"
+  },
+  "custom": {
+    "fiskheroes:cape": {
+      "applicable": ["CHESTPLATE"],
+      "texture": "cape",
+      "length": 24
+    },
+    "fiskheroes:chest": {
+      "applicable": ["CHESTPLATE"],
+      "extrude": 0.75,
+      "offset": 1
+    }
+  }
+}
+```
+Adding Lights
+```markdown
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "pack:stan_lee_layer1",
+    "layer2": "pack:stan_lee_layer2",
+    "lights": "pack:stan_lee_lights"
+  },
+  "lights": {
+    "renderLayer": {
+      "CHESTPLATE": "lights"
+    },
+    "default": "null"
+  }
+}
+```
 ### Creating Suit Alts
 Suit alts are easy to add, but they take time due to having to make all the separate textures for them. However, they're rewarding in the end.
 
@@ -286,3 +368,8 @@ Declaring the altid and name in your heropack.json
 For this tutorial section we're going to use another Stan Lee skin made by Kill3rCreeper this time. https://www.planetminecraft.com/skin/stan-lee-3154027/
 
 We'll call this version "classic" this id will be used for our textures and models.
+
+Afterword, you're going to follow the texturing and modeling guide, but put the alt id after the names.
+
+Example: 
+/assets/"YourPackName"/textures/items/your_hero_item_textures_altid.png
