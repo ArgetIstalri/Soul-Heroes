@@ -1,8 +1,8 @@
 {
   "parent": "fiskheroes:hero_speedster",
   "resources": {
-    "layer1": "dfiskpack:wally_layer1",
-    "layer2": "dfiskpack:wally_layer2"
+    "layer1": "SHeroes:wally_layer1",
+    "layer2": "SHeroes:wally_layer2"
   },
   "custom": {
     "fiskheroes:trail": {
