@@ -1,0 +1,13 @@
+{
+  "parent": "fiskheroes:hero_speedster",
+  "resources": {
+    "layer1": "dfiskpack:wally_layer1",
+    "layer2": "dfiskpack:wally_layer2"
+  },
+  "custom": {
+    "fiskheroes:trail": {
+      "type": "SHeroes:lightning_blue",
+      "conditionals": ["vars:SPEEDING"]
+    }
+  }
+}
